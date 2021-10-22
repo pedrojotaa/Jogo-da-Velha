@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     text-align: center;
 }
@@ -7,8 +12,33 @@ body{
     height: 100px;
     background-color: blueviolet;
     display: inline-block;
+    position: relative;
+}
+
+.o{
+    position: absolute;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .o:after {
+    content: '\1F6E1';
+    font-size: 50px;
+}
 
+.x{
+    position: absolute;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.x:after {
+    content: '\2694';
+    font-size: 50px;
 }
